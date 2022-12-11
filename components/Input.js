@@ -3,14 +3,9 @@ import {View,TextInput, Button, Modal} from 'react-native';
 
 const Input = props => {
     const [enteredGoal, setEnteredGoal] = useState('');
-
-
     const goalInputHandler = (enteredText) => {
         setEnteredGoal(enteredText)
-      }
-    
-    
-
+      }       
     return(
         <Modal visible={props.visible} animationType="slide">
         <View style={{
@@ -29,7 +24,6 @@ const Input = props => {
              borderColor: 'black',
              padding: 10
          }}
-
          />  
          <Button 
          title="취소"
